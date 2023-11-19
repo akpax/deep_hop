@@ -1,0 +1,10 @@
+Flask==2.2.5
+transformers==4.33.1
+bitsandbytes
+torch==2.0.1
+tqdm==4.66.1
+scipy==1.11.3
+Flask-WTF
+pytest
+gunicorn
+Flask-SQLAlchemy
