@@ -70,8 +70,9 @@ def load_model():
 
 @app.route("/generate_lyrics", methods=["GET", "POST"])
 def generate_lyrics():
-    form = VerseInputForm()
     global loaded_model
+    form = VerseInputForm()
+    print("On entering generate_lyrics, model is:", "Loaded" if loaded_model else "None")
     # handle
     if loaded_model is None:
         return redirect(url_for("home"))
