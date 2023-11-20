@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+<div class="centered-container">
+  <div class="display-verses">
+  <h5> INPUTED VERSE: "{{ user_input }}"" </h5>
+
+ 
+    <h5 style="margin-bottom: .25em;"> GENERATED VERSES: </h5>
+  <ul>
+    {% for verse in generated_verses %}
+    <li class="centered-left-align-item"> {{ verse }}</li>
+    {% endfor %}
+  </ul>
+</div>
+<div class="centered-item">
+  <form id="generate-again-form" method="post" action="{{ url_for('generate_lyrics')}}">
+    <input type="submit" class="button-24 centered-item" value="Generate Again">
+    <input type="hidden" name="generate_again" value="1">  <!-- add flag so generate_lyrics route does not automatically route back to display w/o user input -->
+  
+  </form>
+</div>
+</div>
+
+<!-- <script>
+document.addEventListener("DOMContentLoaded", function () {
+// Add a click event listener to the "Generate Again" button
+var generateAgainButton = document.querySelector("#generate-again-form input[type='submit']");
+generateAgainButton.addEventListener("click", function (event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  // Update the form action attribute to point to the "generate_lyrics" route
+  document.getElementById("generate-again-form").action = "/generate_lyrics";
+  // Submit the form
+  document.getElementById("generate-again-form").submit();
+});
+});
+</script> -->
+  
+
+</body>
+
+
+
+
+{% endblock %}
+

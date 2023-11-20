@@ -1,0 +1,146 @@
+/* Add your custom CSS styles here */
+
+#header-logo{
+    width: 100%;
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-align: center;
+    font-size: 10vw;
+    margin-bottom: 0px;
+}
+
+#sub-header-logo{
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 5px;
+    margin-bottom: 3vw;
+}
+
+.load-button{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+input[type="text"],
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  align-self: center ;
+}
+
+.footer-container {
+    display: flex;
+  }
+  
+  .footer-element {
+    flex: 1;
+  }
+
+
+#loading-message{
+    color: red
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex,
+}
+
+.center-container {
+    text-align: center;
+    justify-content: center;
+}
+
+.centered-item {
+    margin-bottom: 10px; /* Add margin to create space between stacked items */
+    /* Add any other styling you need for the items */
+    text-align: center;
+}
+
+.first-verse-form{
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+
+
+.flex-container {
+    display: flex;
+    background-color: black;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* Set list-style-position to inside for unordered lists */
+ul {
+    list-style-position: inside;
+    margin-top: 5px;
+  }
+
+
+  .display-verses{
+    margin-left: 25vw;
+    text-align: left;
+}
+
+/* CSS to center placeholder text */
+input::placeholder {
+  text-align: center;
+}
+
+
+/* CSS */
+.button-24 {
+background: black;
+  border: 1px solid red;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: red;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  border: black;
+}
+
+.button-24:active {
+  opacity: .5;
+}
