@@ -7,19 +7,9 @@ from flask_sqlalchemy import SQLAlchemy
 from forms import VerseInputForm
 
 
-
-
-# #test model manager
-# print(" ... loading GPTJ ... ")
-# gpt = GPTJ("model/gpt-j-6b.bin").load_and_configure()
-# print(" Load successfull")
-# generated_verse = gpt.generate_verses("pull up in a fast car, nascar")
-# print(generated_verse)
-
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 
-#connect to database
 # CONNECT TO DB
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///model_logging.db'
 db = SQLAlchemy()
@@ -43,7 +33,6 @@ with app.app_context():
     db.create_all()
 
 
-# app.model = GPTJ("/home/ec2-user/deep_hop/model/gpt-j-6b.bin")
 # Global variable to keep track of the model's state
 loaded_model = None
 
