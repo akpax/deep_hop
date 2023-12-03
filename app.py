@@ -62,13 +62,13 @@ def generate_lyrics():
     global loaded_model
     form = VerseInputForm()
     print("On entering generate_lyrics, model is:", "Loaded" if loaded_model else "None")
-    # handle
+    # handle casewhen model not loaded
     if loaded_model is None:
         return redirect(url_for("home"))
     
     # Check if the user clicked the "Generate Again" button
     if request.method == "POST" and "generate_again" in request.form:
-        return render_template("generate.html", form=form)  # Set the flag to indicate the model is loaded
+        return render_template("generate.html", form=form)  
 
     if form.validate_on_submit():
         user_input = form.user_input.data
