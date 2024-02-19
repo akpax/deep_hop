@@ -1,7 +1,7 @@
 # Deep Hop Rap Lyric Generator Using GPT-J and Multi-Task Learning
 
 ## Introduction
-This project explores the creation of a Hip Hop Rap Lyric Generator using a fine-tuned GPT-J model. It focuses on generating rap lyrics with an attempt to achieve rhyme and meter. The model was trained on the Pile dataset, known for its abrasive and profane content, reflecting the raw essence of certain rap music styles.
+This project explores the creation of a Hip Hop Rap Lyric Generator by fine-tuning GPT-J using LoRA. It focuses on generating rap lyrics with an attempt to achieve rhyme and meter. The model was trained on a specially curated dataset scraped from Rap Genuis which atempted multi-task learning with grapheme -> phoneme conversion and vice versa as well as next bar predictions. 
 
 ## Demo
 
